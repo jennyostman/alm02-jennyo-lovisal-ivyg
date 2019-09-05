@@ -16,23 +16,23 @@
                 </div>
                 <br/>
                 <div id="particulars">
-                    Full name: <h:inputText value="#{IndexController.fullName}"></h:inputText>
+                    Full name: <h:inputText value="#{Controller.fullName}"></h:inputText>
                     <br/><br/>
 
-                    Nationality: <h:inputText value="#{IndexController.nationality}"></h:inputText>
+                    Nationality: <h:inputText value="#{Controller.nationality}"></h:inputText>
                     <br/><br/>
 
-                    Ethnicity: <h:inputText value="#{IndexController.ethnicity}"></h:inputText>
+                    Ethnicity: <h:inputText value="#{Controller.ethnicity}"></h:inputText>
                     <br/> <br/>
 
-                    Birth date: <h:inputText value="#{IndexController.birthDate}"></h:inputText>
+                    Age: <h:inputText value="#{Controller.age}"></h:inputText>
                 </div>
                 <br/>
                 <div id="particulars2">
                     <h:outputLabel for="gender">Gender: </h:outputLabel>
                     <h:panelGrid columns="3">
                         <div id="choose-gender">
-                            <h:selectOneRadio value ="#{IndexController.gender}" layout="pageDirection">
+                            <h:selectOneRadio value ="#{Controller.gender}" layout="pageDirection">
                                 <f:selectItem id="radio1" itemValue="M" itemLabel="Male" />
                                 <f:selectItem id="radio2" itemValue="F" itemLabel="Female"/>
                                 <f:selectItem id="radio3" itemValue="O" itemLabel="Other"/>
@@ -44,8 +44,8 @@
                 </div>
                 <hr/>
                 <div id="submitButton">
-                    <h:commandButton value="Tell my Fortune" action="#{response}"></h:commandButton>
-                    <h:outputText value='#{somethingFromPersonsClass}'/>
+                    <h:commandButton value="Tell my Fortune" action="#{Controller.getMessage()}"></h:commandButton>
+                    <h:outputText value='#{Controller.response}'/>
 
                 </div>
 
