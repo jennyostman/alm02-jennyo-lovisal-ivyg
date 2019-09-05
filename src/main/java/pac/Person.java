@@ -58,33 +58,4 @@ public class Person implements Serializable {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    
-    //need a method to check for numbers in name fields
-    
-    public void displayDetails(){
-        if(fullName.equals("")){
-        System.out.println("Hello" + getFullName());
-        } else{
-            System.out.println("Please try again");
-        }
-    }
-    
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Person other = (Person) obj;
-        if (this.birthDate != other.birthDate) {
-            return false;
-        }
-        return true;
-    }
-
 }
