@@ -34,7 +34,7 @@ pipeline {
             agent any
             steps{
                 sh 'export PATH=/opt/glassfish-4.1.1/bin/asadmin:$PATH'
-                sh 'asadmin --port 4848 deploy --force --name alm02-jennyo-lovisal-ivyg-${DEPLOY_ENV} --contextroot alm02-jennyo-lovisal-ivyg-${DEPLOY_ENV} target/alm02-jennyo-lovisal-ivyg-jsf-1.0.war'
+                sh 'asadmin --port 4848 deploy --force --name alm02-jennyo-lovisal-ivyg-${DEPLOY_ENV} --contextroot alm02-jennyo-lovisal-ivyg-${DEPLOY_ENV} target/alm02-jennyo-lovisal-ivyg-1.0-SNAPSHOT.war'
             }
         } 
     }
