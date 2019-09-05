@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Message {
     
-    private static Map<Integer, String> messages = new HashMap<Integer, String>();
+    private Map<Integer, String> messages = new HashMap<>();
 
     public Message() {
         messages.put(1, "Good clothes open many doors. Go shopping.");
@@ -36,5 +36,8 @@ public class Message {
         return messages.get(keyValue);
     }
 
+    public Map<Integer, String> getMessages() {
+        return messages;
+    }
 
 }
